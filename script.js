@@ -317,10 +317,10 @@
         const forms = document.querySelectorAll('.c-contact-form');
 
         const patterns = {
-            firstName: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
-            lastName: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
-            email: /^[^s@]+@[^s@]+.[^s@]+$/,
-            phone: /^[ds+-()]{10,20}$/,
+            firstName: /^[a-zA-ZÀ-ÿ\s-']{2,50}$/,
+            lastName: /^[a-zA-ZÀ-ÿ\s-']{2,50}$/,
+            email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            phone: /^[\d\s+\-()]{10,20}$/,
             message: /^.{10,}$/
         };
 
